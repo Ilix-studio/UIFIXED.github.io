@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,500&family=Russo+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+font-family: 'Russo One', sans-serif;
+    
+}
+
+  body{
+      height: 100vh;
+     background-color: black;
+  }
+
+
+
+
+.text{
+    position: relative;
+   
+    
+}
+.text h1{
+   
+    font-size: 2em;
+    font-weight: 760;
+    line-height: 1em;
+    text-transform: uppercase;
+    display: flex;
+   
+    background: linear-gradient(
+            to right, #cc23a2, #ff6b08,
+             #cf23cf, #eedd44);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        justify-content: center;
+    }
+   
+
+.text p{
+    margin: 35px;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+    background: linear-gradient(
+            to left, #07daff, #31ff08,
+             #cf9923, #ffe600);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        justify-content: center;
+}
+
+
+/*form r mall eyat ase*/
+section{
+    display: flex;
+    justify-content: center;
+   
+    
+}
+
+
+form {
+    position: relative;
+    width: 100%;
+    border-radius: 30px;
+    background: rgba(187, 53, 53, 0.637);
+   
+    }
+
+h1{
+    color: rgba(255, 255, 255, 0.733);
+    
+
+}
+    .form-left-decoration,
+    .form-right-decoration {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    border-radius: 20px;
+    background: #5a7233;
+    }
+    .form-left-decoration {
+    bottom: 60px;
+    left: -30px;
+    }
+    .form-right-decoration {
+    top: 60px;
+    right: -30px;
+    }
+    .form-left-decoration:before,
+    .form-left-decoration:after,
+    .form-right-decoration:before,
+    .form-right-decoration:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    border-radius: 30px;
+    background: #fff;
+    }
+    .form-left-decoration:before {
+    top: -20px;
+    }
+    .form-left-decoration:after {
+    top: 20px;
+    left: 10px;
+    }
+    .form-right-decoration:before {
+    top: -20px;
+    right: 0;
+    }
+    .form-right-decoration:after {
+    top: 20px;
+    right: 10px;
+    }
+    .circle {
+    position: absolute;
+    bottom: 80px;
+    left: -55px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    }
+    .form-inner {
+    padding: 40px;
+    }
+    .form-inner input,
+    .form-inner textarea {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px;
+    background: #ffffff;
+    }
+    .form-inner textarea {
+    resize: none;
+    }
+    button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    border-bottom: 4px solid #3e4f24;
+    background: #5a7233; 
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    }
+    button:hover {
+    background: #3e4f24;
+    } 
+    @media (min-width: 568px) {
+    form {
+    width: 60%;
+    }
+    }
+
+
+
+
+        

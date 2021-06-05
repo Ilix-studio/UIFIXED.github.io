@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="showcase "> 
+        <header>
+            <h2 class="logo">iLiX.</h2>  
+           
+            <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">彡</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="about/index.html">AboutME</a>
+                <a href="Skills/index.html">Skills</a>
+                <a href="Services/index.html">Services</a>
+              </div>
+            </div>
+
+        </header>
+        <video src="assets/2.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            
+            <h3><b>>>ABOUT ME:</b><br>>>I'm a<br> >>WEB DEVELOPER</b></h3>
+           <br>
+            <h5>~AND</h5>
+            <p>[I am always excited to do business with like minded people, lets discuss over coffee.] </p>
+
+            <button class="button4 button4"><a href="Coffee/index.html">Coffee with me!</a></button>
+
+            
+        </div> 
+        <div class="social_logos">
+            <div>
+               
+                <a href="https://www.instagram.com/"> <img class="insta" src="assets/instagram.png" alt=""> </a>
+            </div>
+            <div>
+               
+                <a href="https://github.com/Ilix-studio"> <img class="github" src="assets/github.png" alt=""></a>
+            </div>
+            <div>
+              
+                <a href="https://www.linkedin.com/in/ilish-jyotish-hazarika-b36413182/">  <img class="linkedin" src="assets/linkedin.png" alt=""></a>
+            </div>
+        </div> 
+    </div>
+
+    
+    </div>
+
+
+    
+    </div>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+        
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+</body>
+</html>

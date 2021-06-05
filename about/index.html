@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--first part like foto and lorem-->
+  <sectiom id="about">
+    <div class="container">
+        <h1>ABOUT ME</h1>
+        <div class="column">
+            <div class="left">
+                <div class="about-img">
+                    <img src="Z.jpg" height="500px" width="500px" >
+                   
+                </div>
+            </div>
+
+           <br>
+
+           <div class="right">
+              <p align="justify">
+                Hi I am Ilish Jyotishka Hazarika, a 23 year old Web developer, Digital Marketer from Assam, India. I am an Information Technology Geek, currently working with my own Start-up Company.
+
+               I am a curious seeker with a creative mind. Have a look on my skills or just connect with me on LinkedIn. I am always excited to do business with like minded people. If you are the one, lets discuss over Chai.
+              </p>
+           </div>
+
+        </div>
+    </div>
+</section>
+
+<!--slideshow part-->
+<h2>Inspiring Quotes have a look!</h2>
+    <section class="slideshow-container">
+ 
+  
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="1.jpg" style="width:100%">
+         
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="2.jpg" style="width:100%">
+          
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="3.jpg" style="width:100%">
+        
+        </div>
+        
+    </section>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+        </script>
+
+</body>
+</html>
